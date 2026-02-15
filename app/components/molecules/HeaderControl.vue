@@ -21,6 +21,6 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="">
 import { IconName } from "~/types/icons";
 </script>

@@ -1,9 +1,9 @@
 <template>
   <NuxtLink to="/">
     <div
-      class="w-[180px] h-[110px] flex items-center justify-center bg-brand-green"
+      class="w-[180px] h-[60px] md:h-[110px] flex items-center justify-center bg-brand-green"
     >
-      <img :src="logo" alt="Logo" />
+      <img :src="logo" alt="Logo" class="max-h-full object-contain" />
     </div>
   </NuxtLink>
 </template>

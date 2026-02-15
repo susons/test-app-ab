@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[350px]">
+  <div class="hidden md:block min-w-[150px] max-w-[350px] w-full">
     <nav class="rounded-md bg-white overflow-hidden">
       <SideBarItem to="/contact" label="Contact us" />
       <SideBarItem to="/question" label="Ask a question" />

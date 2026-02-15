@@ -17,4 +17,5 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  css: ["vue3-toastify/dist/index.css"],
 });

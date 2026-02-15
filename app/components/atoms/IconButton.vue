@@ -3,13 +3,20 @@
     :to="to"
     :class="
       cn(
-        'flex items-center text-gray-700 hover:text-gray-900 mx-2',
+        'transition text-gray-700 hover:text-gray-900',
+        props.variant === 'sidebar'
+          ? 'flex flex-col items-center justify-center gap-1 text-xs py-3 hover:bg-gray-50 transition'
+          : 'flex items-center mx-2',
         attrs.class,
       )
     "
   >
-    <Icon class="mr-2" :name="name" :size="size" />
-    <span>{{ label }}</span>
+    <Icon
+      :name="name"
+      :size="size"
+      :class="props.variant === 'header' ? 'mr-2' : ''"
+    />
+    <span v-if="label">{{ label }}</span>
   </NuxtLink>
 </template>
 
@@ -20,15 +27,18 @@ import type { ClassValue } from "clsx";
 
 const attrs = useAttrs() as { class?: ClassValue };
 
-withDefaults(
+const props = withDefaults(
   defineProps<{
-    label: string;
+    label?: string;
     to: string;
     name: IconName;
     size?: number;
+    variant?: "header" | "sidebar";
   }>(),
   {
     size: 20,
+    label: "",
+    variant: "header",
   },
 );
 </script>
