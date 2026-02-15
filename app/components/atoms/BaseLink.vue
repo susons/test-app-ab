@@ -1,20 +1,20 @@
 <template>
-  <NuxtLink
-    :to="to"
-    :class="
-      cn(
-        'flex items-center text-gray-700 hover:text-gray-900 mx-2',
-        attrs.class,
-      )
-    "
-  >
-    <Icon class="mr-2" :name="name" :size="size" />
-    <span>{{ label }}</span>
+  <NuxtLink v-slot="{ isActive }" :to="to">
+    <span
+      :class="
+        cn(
+          'flex items-center mx-2 hover:text-gray-900',
+          isActive ? 'text-header-text font-semibold' : 'text-gray-500',
+          attrs.class,
+        )
+      "
+    >
+      {{ label }}
+    </span>
   </NuxtLink>
 </template>
 
 <script setup lang="ts">
-import type { IconName } from "~/types/icons";
 import { useAttrs } from "vue";
 import type { ClassValue } from "clsx";
 
@@ -24,7 +24,6 @@ withDefaults(
   defineProps<{
     label: string;
     to: string;
-    name: IconName;
     size?: number;
   }>(),
   {

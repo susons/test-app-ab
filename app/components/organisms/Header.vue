@@ -1,17 +1,12 @@
-<template lang="">
-  <header class="w-full border-b bg-white">
+<template>
+  <header class="sticky top-0 z-50 w-full border-b bg-white">
     <div class="max-w-container mx-auto">
       <div class="flex items-center justify-between">
-        <!-- Left -->
         <Logo />
 
-        <!-- Right -->
         <div class="flex flex-col items-end">
-          <!-- Row 1 -->
-          <nav class="flex"><IconButton /></nav>
-
-          <!-- Row 2 -->
-          <div class="flex items-center">Info / Buttons</div>
+          <HeaderControl />
+          <HeaderNav />
         </div>
       </div>
     </div>
