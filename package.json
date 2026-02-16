@@ -7,7 +7,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest",
+    "test:watch": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.15.1",
@@ -26,5 +30,12 @@
     "vue-router": "^4.6.4",
     "vue3-toastify": "^0.2.8",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^4.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^20.6.1",
+    "vitest": "^4.0.18"
   }
 }

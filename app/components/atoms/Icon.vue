@@ -26,5 +26,7 @@ const icons = import.meta.glob("~/assets/icons/*.svg", {
   import: "default",
 }) as Record<string, string>;
 
-const icon = icons[`/assets/icons/${props.name}.svg`];
+const icon = Object.entries(icons).find(([path]) =>
+  path.endsWith(`/icons/${props.name}.svg`),
+)?.[1];
 </script>

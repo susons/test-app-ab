@@ -6,7 +6,7 @@ export default withNuxt({
       "error",
       {
         html: {
-          void: "always", // ✅ <img />
+          void: "always",
           normal: "always",
           component: "always",
         },

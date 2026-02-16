@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import type { IconName } from "~/types/icons";
+import type { IconName } from "@definitions/icons";
 import { useAttrs } from "vue";
 import type { ClassValue } from "clsx";
 
