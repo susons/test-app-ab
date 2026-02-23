@@ -5,12 +5,16 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  test-and-build:
+  test-build-and-coverage:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -27,8 +31,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run tests
-        run: npm test
+      - name: Run tests with coverage
+        run: npm run test:coverage
 
-      - name: Build
+      - name: Run build
         run: npm run build
+
+      - name: Add coverage to PR and job summary
+        uses: davelosert/vitest-coverage-report-action@v2.9.0
+        with:
+          json-summary-path: coverage/coverage-summary.json
+          json-final-path: coverage/coverage-final.json
+
+      - name: Upload HTML coverage report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-html
+          path: coverage
