@@ -41,6 +41,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "AB - Request assistance",
+});
+</script>
 
 <style lang=""></style>
