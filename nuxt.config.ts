@@ -4,6 +4,37 @@ import { dirname, join } from "node:path";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+    head: {
+      htmlAttrs: {
+        lang: "en",
+      },
+      title: "AB test app",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "description", content: "My 1st AB test app" },
+        { name: "format-detection", content: "telephone=no" },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "AB Test App" },
+        { property: "og:description", content: "My 1st AB test app" },
+        {
+          property: "og:image",
+          content: "http://localhost:3000/image.png",
+        },
+        { property: "og:url", content: "http://localhost:3000" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: "AB Test App" },
+        { name: "twitter:description", content: "My 1st AB test app" },
+        {
+          name: "twitter:image",
+          content: "http://localhost:3000/image.png",
+        },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   modules: [
