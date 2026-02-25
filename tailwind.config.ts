@@ -10,57 +10,58 @@ export default <Partial<Config>>{
         container: "1120px",
       },
       colors: {
-        border: "#C0C8D8",
-        background: "#4C5367",
+        border: "#D6E4F0",
+        background: "#F4F9FD",
 
         brand: {
           white: "#FFFFFF",
 
-          green: {
-            DEFAULT: "#CDDA32",
-            hover: "#ACB90C",
+          primary: {
+            light: "#EAF3FF",
+            DEFAULT: "#2F80ED",
+            hover: "#1E6FD8",
+            dark: "#1557B0",
           },
-
-          blue: {
-            dark: "#152649",
-            dark64: "rgba(21, 38, 73, 0.64)",
-            ui: "#313892",
-            light: "#95CEEB",
+          accent: {
+            light: "#EEF2FF",
+            DEFAULT: "#4F46E5",
+            hover: "#4338CA",
+            dark: "#3730A3",
           },
 
           black: {
-            DEFAULT: "#000000",
-            25: "rgba(0, 0, 0, 0.25)",
+            DEFAULT: "#111827",
+            25: "rgba(17, 24, 39, 0.25)",
           },
 
-          red: "#BC3C3C",
+          red: "#E5484D",
         },
 
         info: {
-          info: "#E5F6FF",
-          warning: "#FFFFCC",
+          info: "#EAF6FF",
+          warning: "#FFF8CC",
         },
 
         sidebar: {
-          divider: "#E2E4E9",
-          background: "#F9F9F9",
+          divider: "#E3EEF7",
+          background: "#F7FBFF",
         },
 
         header: {
-          text: "#7E7E7E",
+          text: "#5F6B7A",
         },
 
         form: {
-          border: "#CED2D7",
-          placeholder: "#B4B9C4",
+          border: "#D8E6F3",
+          placeholder: "#9BB3C9",
           social: {
-            background: "#E9E9E9",
+            background: "#EEF6FC",
           },
           footer: {
-            title: "#333333",
+            title: "#1F2937",
           },
           gray: {
-            light: "#BDC1CD",
+            light: "#C7D7E6",
           },
         },
       },

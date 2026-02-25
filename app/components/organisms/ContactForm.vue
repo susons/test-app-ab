@@ -106,7 +106,7 @@
               />
               <div />
             </div>
-            <div class="mt-2 text-sm text-brand-blue-dark/60">
+            <div class="mt-2 text-sm text-brand-primary-dark/60">
               For example: <span class="font-medium">30 8 1972</span>
             </div>
           </div>
@@ -123,9 +123,11 @@
       <div
         class="grid grid-cols-1 gap-6 px-10 py-10 sm:grid-cols-[minmax(100px,140px)_1fr] lg:grid-cols-[260px_1fr]"
       >
-        <p class="text-sm leading-5 text-brand-blue-dark/60 max-w-sm">
+        <p class="text-sm leading-5 text-brand-primary-dark/60 max-w-sm">
           By submitting this form you agree to airBaltic’s
-          <a href="#" class="underline text-brand-blue-dark">Privacy Policy</a>
+          <a href="#" class="underline text-brand-primary-dark"
+            >Privacy Policy</a
+          >
         </p>
         <div class="w-full sm:justify-self-start sm:w-auto">
           <Button

@@ -7,15 +7,15 @@
     <span
       :class="
         cn(
-          'relative block px-5 py-4 text-sm font-semibold bg-sidebar-background hover:text-brand-green-hover ',
-          isActive ? 'text-brand-green' : 'text-brand-blue-dark',
+          'relative block px-5 py-4 text-sm font-semibold bg-sidebar-background hover:text-brand-accent-hover ',
+          isActive ? 'text-brand-accent' : 'text-brand-accent-dark',
           attrs.class,
         )
       "
     >
       <span
         v-if="isActive"
-        class="absolute left-0 top-0 h-full w-[3px] bg-brand-green"
+        class="absolute left-0 top-0 h-full w-[3px] bg-brand-accent"
       />
       {{ label }}
     </span>

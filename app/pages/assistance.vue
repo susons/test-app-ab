@@ -12,14 +12,14 @@
       </div>
     </div>
 
-    <h1 class="text-[40px] leading-[48px] font-light text-brand-blue-dark">
+    <h1 class="text-[40px] leading-[48px] font-light text-brand-primary-dark">
       Request assistance from us
     </h1>
-    <p class="mt-6 max-w-2xl text-base leading-6 text-brand-blue-dark/80">
+    <p class="mt-6 max-w-2xl text-base leading-6 text-brand-primary-dark/80">
       Providing assistance to passengers with reduced mobility is part of our
       service at airBaltic.
     </p>
-    <p class="mt-8 text-sm font-semibold text-brand-blue-dark">
+    <p class="mt-8 text-sm font-semibold text-brand-primary-dark">
       We can help you:
     </p>
 
@@ -43,7 +43,7 @@
 
 <script setup>
 useHead({
-  title: "AB - Request assistance",
+  title: "Request flight assistance!",
 });
 </script>
 

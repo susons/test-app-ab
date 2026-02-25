@@ -33,7 +33,7 @@ describe("SideBarItem", () => {
     });
 
     expect(wrapper.get("span").classes().join(" ")).toContain(
-      "text-brand-green",
+      "text-brand-accent",
     );
   });
 });
