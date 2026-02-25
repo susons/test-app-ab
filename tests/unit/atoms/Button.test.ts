@@ -26,7 +26,7 @@ describe("Button", () => {
     });
 
     expect(wrapper.get("button").classes().join(" ")).toContain(
-      "bg-brand-blue-ui",
+      "bg-brand-primary-hover",
     );
   });
 

@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <label
       :for="id"
-      class="block min-h-[16px] text-xs font-medium text-brand-blue-dark"
+      class="block min-h-[16px] text-xs font-medium text-brand-primary-dark"
     >
       {{ label }}
     </label>
@@ -14,7 +14,7 @@
         :disabled="disabled"
         :class="
           cn(
-            'w-full appearance-none border border-slate-200 px-4 py-3 text-sm text-brand-blue-dark outline-none focus:border-brand-green',
+            'w-full appearance-none border border-slate-200 px-4 py-3 text-sm text-brand-primary-dark outline-none focus:border-brand-primary',
             hasError ? 'border-brand-red' : '',
           )
         "
@@ -29,7 +29,7 @@
       </select>
 
       <span
-        class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-brand-blue-dark/50"
+        class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-brand-primary-dark/50"
       >
         <Icon :name="IconName.caret" class="rotate-90" />
       </span>

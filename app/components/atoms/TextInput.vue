@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <label
       :for="id"
-      class="block min-h-[16px] text-xs font-medium text-brand-blue-dark"
+      class="block min-h-[16px] text-xs font-medium text-brand-primary-dark"
     >
       {{ label }}
     </label>
@@ -20,7 +20,7 @@
       :max="max ?? undefined"
       :class="
         cn(
-          'mt-2 w-full border border-slate-200 px-4 py-3 text-sm outline-none focus:border-brand-green disabled:opacity-50 disabled:cursor-not-allowed',
+          'mt-2 w-full border border-slate-200 px-4 py-3 text-sm outline-none focus:border-brand-accent disabled:opacity-50 disabled:cursor-not-allowed',
           hasError ? 'border-brand-red' : '',
         )
       "
